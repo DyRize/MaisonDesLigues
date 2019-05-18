@@ -1,0 +1,841 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MaisonDesLigues</name>
+    </assembly>
+    <members>
+        <member name="T:BaseDeDonnees.Bdd">
+            <summary>
+            Classe d'accès aux données
+            </summary>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BaseDeDonnees.Bdd"/> class.
+            Constructeur de la connexion
+            </summary>
+            <param name="unLogin">login utilisateur</param>
+            <param name="unPwd">mot de passe utilisateur</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.FermerConnexion">
+            <summary>
+            Méthode permettant de fermer la connexion
+            </summary>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.ObtenirDonnesOracle(System.String)">
+            <summary>
+            permet de récupérer le contenu d'une table ou d'une vue.
+            </summary>
+            <param name="uneTableOuVue"> nom de la table ou la vue dont on veut récupérer le contenu</param>
+            <returns>un objet de type datatable contenant les données récupérées</returns>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.InscrireLicencie(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.Int16,System.Collections.ObjectModel.Collection{System.Int16},System.Int64,System.Double,System.String,System.Collections.ObjectModel.Collection{System.Int16})">
+            <summary>
+            Procédure publique qui va appeler la procédure stockée permettant d'inscrire un nouveau licencié sans nuités
+            </summary>
+            <param name="pNom">Nom du licencié</param>
+            <param name="pPrenom">Prénom du licencié</param>
+            <param name="pAdresse1">Adresse du licencié</param>
+            <param name="pAdresse2">Complément d'adresse du licencié</param>
+            <param name="pCp">Code Postal du licencié</param>
+            <param name="pVille">Ville du licencié</param>
+            <param name="pTel">Numéro de téléphone du licencié</param>
+            <param name="pMail">Email du licencié</param>
+            <param name="pNumeroLicence">Numéro de licence du licencié</param>
+            <param name="pIdQualite">Qualité du licencié</param>
+            <param name="pAteliers">Ateliers du licencié</param>
+            <param name="pNumCheque">Numéro de chèque du licencié</param>
+            <param name="pMontantCheque">Montant du chèque du licencié</param>
+            <param name="pTypePaiement">Type de paiement</param>
+            <param name="pAccompagnants">Accompagnants du licencié</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.InscrireLicencie(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.Int16,System.Collections.ObjectModel.Collection{System.Int16},System.Int64,System.Double,System.String,System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{System.Int16},System.Collections.ObjectModel.Collection{System.Int16})">
+            <summary>
+            Procédure publique qui va appeler la procédure stockée permettant d'inscrire un nouveau licencié avec nuités
+            </summary>
+            <param name="pNom">Nom du licencié</param>
+            <param name="pPrenom">Prénom du licencié</param>
+            <param name="pAdresse1">Adresse du licencié</param>
+            <param name="pAdresse2">Complément d'adresse du licencié</param>
+            <param name="pCp">Code Postal du licencié</param>
+            <param name="pVille">Ville du licencié</param>
+            <param name="pTel">Numéro de téléphone du licencié</param>
+            <param name="pMail">Email du licencié</param>
+            <param name="pNumeroLicence">Numéro de licence du licencié</param>
+            <param name="pIdQualite">Qualité du licencié</param>
+            <param name="pAteliers">Ateliers du licencié</param>
+            <param name="pNumCheque">Numéro de chèque du licencié</param>
+            <param name="pMontantCheque">Montant du chèque du licencié</param>
+            <param name="pTypePaiement">Type de paiement</param>
+            <param name="pCategories">collection des catégories de l'hotel du licencié</param>
+            <param name="pHotels">collection des hotels du licencié</param>
+            <param name="pNuits">collection des nuits du licencié</param>
+            <param name="pAccompagnants">Accompagnants du licencié</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.InscrireBenevole(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Nullable{System.Int64},System.Collections.ObjectModel.Collection{System.Int16})">
+            <summary>
+            procédure qui va se charger d'invoquer la procédure stockée qui ira inscrire un participant de type bénévole
+            </summary>
+            <param name="pNom">nom du participant</param>
+            <param name="pPrenom">prénom du participant</param>
+            <param name="pAdresse1">adresse1 du participant</param>
+            <param name="pAdresse2">adresse2 du participant</param>
+            <param name="pCp">cp du participant</param>
+            <param name="pVille">ville du participant</param>
+            <param name="pTel">téléphone du participant</param>
+            <param name="pMail">mail du participant</param>
+            <param name="pDateNaissance">mail du bénévole</param>
+            <param name="pNumeroLicence">numéro de licence du bénévole ou null</param>
+            <param name="pDateBenevolat">collection des id des dates où le bénévole sera présent</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.InscrireIntervenant(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int16,System.String)">
+            <summary>
+            Procédure publique qui va appeler la procédure stockée permettant d'inscrire un nouvel intervenant sans nuité
+            </summary>
+            <param name="pNom">nom du participant</param>
+            <param name="pPrenom">prénom du participant</param>
+            <param name="pAdresse1">adresse1 du participant</param>
+            <param name="pAdresse2">adresse2 du participant</param>
+            <param name="pCp">cp du participant</param>
+            <param name="pVille">ville du participant</param>
+            <param name="pTel">téléphone du participant</param>
+            <param name="pMail">mail du participant</param>
+            <param name="pIdAtelier"> Id de l'atelier où interviendra l'intervenant</param>
+            <param name="pIdStatut">statut de l'intervenant pour l'atelier : animateur ou intervenant</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.InscrireIntervenant(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int16,System.String,System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{System.Int16})">
+            <summary>
+            Procédure publique qui va appeler la procédure stockée permettant d'inscrire un nouvel intervenant qui aura des nuités
+            </summary>
+            <param name="pNom">nom du participant</param>
+            <param name="pPrenom">prénom du participant</param>
+            <param name="pAdresse1">adresse1 du participant</param>
+            <param name="pAdresse2">adresse2 du participant</param>
+            <param name="pCp">cp du participant</param>
+            <param name="pVille">ville du participant</param>
+            <param name="pTel">téléphone du participant</param>
+            <param name="pMail">mail du participant</param>
+            <param name="pIdAtelier"> Id de l'atelier où interviendra l'intervenant</param>
+            <param name="pIdStatut">statut de l'intervenant pour l'atelier : animateur ou intervenant</param>
+            <param name="pLesCategories">tableau contenant la catégorie de chambre pour chaque nuité à réserver</param>
+            <param name="pLesHotels">tableau contenant l'hôtel pour chaque nuité à réserver</param>
+            <param name="pLesNuits">tableau contenant l'id de la date d'arrivée pour chaque nuité à réserver</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.ObtenirDatesNuites">
+            <summary>
+            fonction permettant de construire un dictionnaire dont l'id est l'id d'une nuité et le contenu une date
+            sous la la forme : lundi 7 janvier 2013        ///
+            </summary>
+            <returns>un dictionnaire dont l'id est l'id d'une nuité et le contenu une date</returns>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.AjouterAtelier(System.String,System.Decimal,System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Procédure publique qui va appeler la procédure stockée permettant d'ajouter un atelier ainsi que ses thèmes et vacations
+            </summary>
+            <param name="pLibelle">Libellé de l'Atelier</param>
+            <param name="pNbPlacesMaxi">Nombre de places maximum de l'Atelier</param>
+            <param name="pLesThemes">Thèmes de l'Atelier</param>
+            <param name="pLesVacationsDebut">Début des vacations de l'Atelier</param>
+            <param name="pLesVacationsFin">Fin des vacations de l'Atelier</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.AjouterTheme(System.Int16,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Procédure publique qui va appeler la procédure stockée permettant d'ajouter une liste de Thèmes à un Atelier
+            </summary>
+            <param name="pIdAtelier">ID de l'Atelier</param>
+            <param name="pLesThemes">Liste de Thèmes</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.AjouterVacation(System.Int16,System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Procédure publique qui va appeler la procédure stockée permettant d'ajouter une liste de Vacations à un Atelier
+            </summary>
+            <param name="pIdAtelier">ID de l'Atelier</param>
+            <param name="pLesVacationsDebut">Liste des débuts de Vacations</param>
+            <param name="pLesVacationsFin">Liste des fins de Vacations</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.ObtenirDonnesParticipantsOracle">
+            <summary>
+            Fonction qui va retourner sous la forme d'une table, l'id, le nom, et le prénom de chaque Participant dans la  vue
+            </summary>
+            <returns>Retourne une table avec l'id, le nom et le prénom de chaque participant</returns>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.Enregistrementarrivee(System.Int32,System.DateTime,System.String)">
+            <summary>
+            Procédure publique qui va récupérer les informations du form afin de les insérer dans la base
+            </summary>
+            <param name="pid">Participant que l'on souhaite enregistrer (id)</param>
+            <param name="pDateHeureArrivee">Va prendre la date et l'heure du DateTimePicker au moment de l'enregistrement</param>
+            <param name="pclewifi">Récupère la clé wifi générée automatiquement afin de l'enregistrer dans la base</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.ParamsSpecifiquesIntervenant(Oracle.ManagedDataAccess.Client.OracleCommand,System.Int16,System.String)">
+            <summary>
+            méthode privée permettant de valoriser les paramètres d'un objet commmand spécifiques intervenants
+            </summary>
+            <param name="cmd"> nom de l'objet command concerné par les paramètres</param>
+            <param name="pIdAtelier"> Id de l'atelier où interviendra l'intervenant</param>
+            <param name="pIdStatut">statut de l'intervenant pour l'atelier : animateur ou intervenant</param>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.GetMessageOracle(System.String)">
+            <summary>
+            méthode permettant de renvoyer un message d'erreur provenant de la bd
+            après l'avoir formatté. On ne renvoie que le message, sans code erreur
+            </summary>
+            <param name="unMessage">message à formater</param>
+            <returns>message formaté à afficher dans l'application</returns>
+        </member>
+        <member name="M:BaseDeDonnees.Bdd.ParamCommunsNouveauxParticipants(Oracle.ManagedDataAccess.Client.OracleCommand,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            méthode privée permettant de valoriser les paramètres d'un objet commmand communs aux licenciés, bénévoles et intervenants
+            </summary>
+            <param name="cmd">nom de l'objet command concerné par les paramètres</param>
+            <param name="pNom">nom du participant</param>
+            <param name="pPrenom">prénom du participant</param>
+            <param name="pAdresse1">adresse1 du participant</param>
+            <param name="pAdresse2">adresse2 du participant</param>
+            <param name="pCp">cp du participant</param>
+            <param name="pVille">ville du participant</param>
+            <param name="pTel">téléphone du participant</param>
+            <param name="pMail">mail du participant</param>
+        </member>
+        <member name="T:MaisonDesLigues.Utilitaire">
+            <summary>
+            Classe utilitaire
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.Utilitaire.CreerCombo(System.Windows.Forms.ScrollableControl,System.String,System.Int16,System.Int16)">
+            <summary>
+            Créé une combobox dans un container avec le nom passé en paramètre
+            </summary>
+            <param name="unContainer">panel ou groupbox</param>
+            <param name="unNom">nom de la groupbox à créer</param>
+            <param name="unTop">positionnement haut dans le container  </param>
+            <param name="unLeft">positionnement bas dans le container </param>
+        </member>
+        <member name="M:MaisonDesLigues.Utilitaire.RemplirComboBoxParticipants(BaseDeDonnees.Bdd,System.Windows.Forms.ComboBox)">
+            <summary>
+            Procédure qui va ajouter dans un dictionnaire les données que l'ont récupère d'un participant
+            (id,nom,prenom) et qui servira a hydrater la combobox
+            </summary>
+            <param name="uneConnexion">unobjet de type connexion</param>
+            <param name="uneCombo">unobjet de type </param>
+        </member>
+        <member name="M:MaisonDesLigues.Utilitaire.CreerDesControles(System.Windows.Forms.Form,BaseDeDonnees.Bdd,System.String,System.String,System.Windows.Forms.ScrollableControl,System.String,System.Action{System.Object,System.EventArgs})">
+            <summary>
+            Cette méthode crée des controles de type chckbox ou radio button dans un controle de type panel.
+            Elle va chercher les données dans la base de données et crée autant de controles (les uns au dessous des autres
+            qu'il y a de lignes renvoyées par la base de données.
+            </summary>
+            <param name="uneForme">Le formulaire concerné</param>
+            <param name="uneConnexion">L'objet connexion à utiliser pour la connexion à la BD</param>
+            <param name="pUneTable">Le nom de la source de données qui va fournir les données. Il s'agit en fait d'une vue de type
+            VXXXXOn ou XXXX représente le nom de la tabl à partir de laquelle la vue est créée. n représente un numéro de séquence</param>
+            <param name="pPrefixe">les noms des controles sont standard : NomControle_XX
+                                                    ou XX estl'id de l'enregistrement récupéré dans la vue qui
+                                                    sert de source de données</param>
+            <param name="unPanel">panel ou groupbox dans lequel on va créer les controles</param>
+            <param name="unTypeControle">type de controle à créer : checkbox ou radiobutton</param>
+            <param name="callback"> Le pointeur de fonction. En fait le pointeur sur la fonction qui réagira à l'événement déclencheur </param>
+        </member>
+        <member name="M:MaisonDesLigues.Utilitaire.RemplirComboBox(BaseDeDonnees.Bdd,System.Windows.Forms.ComboBox,System.String)">
+            <summary>
+            méthode permettant de remplir une combobox à partir d'une source de données
+            </summary>
+            <param name="uneConnexion">L'objet connexion à utiliser pour la connexion à la BD</param>
+            <param name="uneCombo"> La combobox que l'on doit remplir</param>
+            <param name="uneSource">Le nom de la source de données qui va fournir les données. Il s'agit en fait d'une vue de type
+            VXXXXOn ou XXXX représente le nom de la tabl à partir de laquelle la vue est créée. n représente un numéro de séquence</param>
+        </member>
+        <member name="M:MaisonDesLigues.Utilitaire.CreerTextBox(System.Windows.Forms.ScrollableControl,System.String,System.Int16,System.Int16)">
+            <summary>
+            Méthode permettant de créer une TextBox dans un panel passé en paramètre
+            </summary>
+            <param name="unPanel">Panel</param>
+            <param name="unNom">Nom de la TextBox</param>
+            <param name="unTop">Position Top de la TextBox</param>
+            <param name="unLeft">Position Left de la TextBox</param>
+        </member>
+        <member name="M:MaisonDesLigues.Utilitaire.CreerControlesVacation(System.Windows.Forms.ScrollableControl,System.String,System.Int16,System.Int16,System.String,System.Int16,System.Int16)">
+            <summary>
+            Méthode permettant de créer les contrôles d'une vacation dans un panel passé en paramètre
+            </summary>
+            <param name="unPanel">Panel</param>
+            <param name="unNomDtpDebut">Nom du premier contôle</param>
+            <param name="unTopDtpDebut">Position Top du premier contrôle</param>
+            <param name="unLeftDtpDebut">Position Left du premier contrôle</param>
+            <param name="unNomDtpFin">Nom du second contôle</param>
+            <param name="unTopDtpFin">Position Top du second contrôle</param>
+            <param name="unLeftDtpFin">Position Left du second contrôle</param>
+        </member>
+        <member name="M:MaisonDesLigues.Utilitaire.EnvoiMail(System.String,System.String,System.String)">
+            <summary>
+            Permet l'envoi d'un mail via le protocole smtp
+            </summary>
+            <param name="email">Destinataire</param>
+            <param name="objetMail">Objet</param>
+            <param name="messageMail">Message</param>
+        </member>
+        <member name="M:MaisonDesLigues.Utilitaire.CompteChecked(System.Windows.Forms.ScrollableControl)">
+            <summary>
+            Cette fonction va compter le nombre de controles types CheckBox qui sont cochées contenus dans la collection controls
+            du container passé en paramètre
+            </summary>
+            <param name="unContainer"> le container sur lequel on va compter les controles de type checkbox qui sont checked</param>
+            <returns>nombre  de checkbox cochées</returns>
+        </member>
+        <member name="M:MaisonDesLigues.Utilitaire.AffecterControle(System.Windows.Forms.Form,System.Windows.Forms.ScrollableControl,System.Windows.Forms.ButtonBase,System.String,System.Data.DataRow,System.Int16,System.Action{System.Object,System.EventArgs})">
+            <summary>
+            Cette méthode permet de renseigner les propriétés des contrôles à créer. C'est une partie commune aux
+            3 types de participants : intervenant, licencié, bénévole
+            </summary>
+            <param name="uneForme">le formulaire concerné</param>
+            <param name="unContainer">le panel ou le groupbox dans lequel on va placer les controles</param>
+            <param name="unControleAPlacer"> le controle en cours de création</param>
+            <param name="unPrefixe">les noms des controles sont standard : NomControle_XX
+                                                    ou XX estl'id de l'enregistrement récupéré dans la vue qui
+                                                    sert de siurce de données</param>
+            <param name="uneLigne">un enregistrement de la vue, celle pour laquelle on crée le contrôle</param>
+            <param name="i"> Un compteur qui sert à positionner en hauteur le controle</param>
+            <param name="callback"> Le pointeur de fonction. En fait le pointeur sur la fonction qui réagira à l'événement déclencheur </param>
+        </member>
+        <member name="T:MaisonDesLigues.FrmLogin">
+            <summary>
+            Classe WinForm de login
+            </summary>
+            <summary>
+            Formulaire d'accueil de l'application.
+            Permet de saisir le login et le password de l'application et d'aller sur la page principale.
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmLogin.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MaisonDesLigues.FrmLogin"/> class.
+            constructeur
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmLogin.CmdOk_Click(System.Object,System.EventArgs)">
+            <summary>
+            gestion événement click sur le bouton ok
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmLogin.ControleValide(System.Object,System.EventArgs)">
+            <summary>
+            gestion de l'activation/désactivation du bouton ok
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="F:MaisonDesLigues.FrmLogin.components">
+            <summary>
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmLogin.Dispose(System.Boolean)">
+            <summary>
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmLogin.InitializeComponent">
+            <summary>
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="T:MaisonDesLigues.FrmPrincipale">
+            <summary>
+            Fenêtre principale de l'application
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MaisonDesLigues.FrmPrincipale"/> class.
+            constructeur du formulaire
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.FrmPrincipale_Load(System.Object,System.EventArgs)">
+            <summary>
+            création et ouverture d'une connexion vers la base de données sur le chargement du formulaire
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.CmdQuitter_Click(System.Object,System.EventArgs)">
+            <summary>
+            gestion de l'événement click du bouton quitter.
+            Demande de confirmation avant de quitetr l'application.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.RadTypeParticipant_Changed(System.Object,System.EventArgs)">
+            <summary>
+            Gestion de la sélection du RadioButton du type de participant pour affichage des compléments d'information
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.GererInscriptionIntervenant">
+            <summary>
+            procédure permettant d'afficher l'interface de saisie du complément d'inscription d'un intervenant.
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.GererInscriptionLicencie">
+            <summary>
+            procédure permettant de désactiver l'interface de saisie supllémentaire pour bénévole ou intervenant
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.GererInscriptionBenevole">
+            <summary>
+            procédure permettant d'afficher l'interface de saisie des disponibilités des bénévoles.
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.RdbStatutIntervenant_StateChanged(System.Object,System.EventArgs)">
+            <summary>
+            permet d'appeler la méthode VerifBtnEnregistreIntervenant qui déterminera le statu du bouton BtnEnregistrerIntervenant
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.ChkAtelier_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            permet d'appeler la méthode VerifBtnEnregistreLicencie qui déterminera le statut du bouton BtnEnregistrerLicencie
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnEnregistreBenevole_Click(System.Object,System.EventArgs)">
+            <summary>
+            Permet d'intercepter le click sur le bouton d'enregistrement d'un bénévole.
+            Cetteméthode va appeler la méthode InscrireBenevole de la Bdd, après avoir mis en forme certains paramètres à envoyer.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.ChkDateBenevole_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Cetet méthode teste les données saisies afin d'activer ou désactiver le bouton d'enregistrement d'un bénévole
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.RdbNuiteIntervenant_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Méthode qui permet d'afficher ou masquer le controle panel permettant la saisie des nuités d'un intervenant.
+            S'il faut rendre visible le panel, on teste si les nuités possibles ont été chargés dans ce panel. Si non, on les charges
+            On charge ici autant de contrôles ResaNuit qu'il y a de nuits possibles
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnEnregistrerIntervenant_Click(System.Object,System.EventArgs)">
+            <summary>
+            Cette procédure va appeler la procédure .... qui aura pour but d'enregistrer les éléments
+            de l'inscription d'un intervenant, avec éventuellment les nuités à prendre en compte        ///
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.ClearIdentite">
+            <summary>
+            Méthode permettant de vider les champs d'identité d'un participant
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.ClearComplementIntervenant">
+            <summary>
+            Méthode permettant de réinitialiser les données du complément d'inscription pour un Intervenant
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.ClearComplementBenevole">
+            <summary>
+            Méthode permettant de réinitialiser les données du complément d'inscription pour un bénévole
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.VerifBtnEnregistreIntervenant">
+            <summary>
+            Méthode privée testant le contrôle combo et la variable IdStatutSelectionne qui contient une valeur
+            Cette méthode permetra ensuite de définir l'état du bouton BtnEnregistrerIntervenant
+            </summary>
+            <returns>booléen</returns>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.VerifBtnEnregistreLicencie">
+            <summary>
+            Méthode privée testant le contrôle combo et la variable IdStatutSelectionne qui contient une valeur
+            Cette méthode permetra ensuite de définir l'état du bouton BtnEnregistrerIntervenant
+            </summary>
+            <returns>booléen</returns>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.CmbAtelierIntervenant_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Méthode permettant de définir le statut activé/désactivé du bouton BtnEnregistrerIntervenant
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.RadTypeInformation_Changed(System.Object,System.EventArgs)">
+            <summary>
+            Gestion de la sélection du RadioButton du type d'information pour affichage des champs à remplir
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.GererInformationsAtelier">
+            <summary>
+            Méthode permettant l'affichage des composants d'ajout d'un Atelier
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.GererInformationsTheme">
+            <summary>
+            Méthode permettant l'affichage des composants d'ajout d'un Thème
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.GererInformationsVacation">
+            <summary>
+            Méthode permettant l'affichage des composants d'ajout d'une Vacation
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.GererModificationsVacation">
+            <summary>
+            Méthode permettant l'affichage des composants de modification d'une Vacation
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnAnnulerModification_Click(System.Object,System.EventArgs)">
+            <summary>
+            Remet à l'état initial les composants de modification d'une Vacation
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnModifierModif_Click(System.Object,System.EventArgs)">
+            <summary>
+            Valide la modification d'une vacation
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnAnnulerAtelier_Click(System.Object,System.EventArgs)">
+            <summary>
+            Remet à l'état initial les composants d'ajout d'un Atelier
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnAnnulerTheme_Click(System.Object,System.EventArgs)">
+            <summary>
+            Remet à l'état initial les composants d'ajout d'un Thème
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnAnnulerVacation_Click(System.Object,System.EventArgs)">
+            <summary>
+            Remet à l'état initial les composants d'ajout d'une Vacation
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.CmdQuitter2_Click(System.Object,System.EventArgs)">
+            <summary>
+            gestion de l'événement click du bouton quitter.
+            Demande de confirmation avant de quitetr l'application.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.VerifBtnEnregistreAtelier">
+            <summary>
+            Conditions d'activation du bouton d'enregistrement d'un Atelier
+            </summary>
+            <returns>Conditions</returns>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtLibelleAtelier_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.NudNbPlacesAtelier_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtLibelleThemeAtelier_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtHeureDebutVacationAtelier_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtHeureFinVacationAtelier_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.VerifBtnEnregistreTheme">
+            <summary>
+            Conditions d'activation du bouton d'enregistrement d'un Thème
+            </summary>
+            <returns>Conditions</returns>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtLibelleTheme_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.CmbChoixAtelierTheme_SelectedValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.VerifBtnModifieVacation">
+            <summary>
+            Conditions d'activation du bouton de modification d'une Vacation
+            </summary>
+            <returns>Conditions</returns>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.CmbAtelierModif_SelectedValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton de modification
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.CmbVacationModif_SelectedValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton de modification
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtHeureDebutModif_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton de modification
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtHeureFinModif_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton de modification
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.VerifBtnEnregistreVacation">
+            <summary>
+            Conditions d'activation du bouton d'enregistrement d'une Vacation
+            </summary>
+            <returns>Conditions</returns>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnEnregistrerAtelier_Click(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.CmbChoixAtelierVacation_SelectedValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnAutreThemeAtelier_Click(System.Object,System.EventArgs)">
+            <summary>
+            Ajout dynamique d'une nouvelle TextBox pour un Thème
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnAutreVacationAtelier_Click(System.Object,System.EventArgs)">
+            <summary>
+            Ajout dynamique d'un couple de DateTimepicker pour une Vacation
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnSupprimerThemeAtelier_Click(System.Object,System.EventArgs)">
+            <summary>
+            Suppression de la dernière TextBox pour un Thème ajoutée dynamiquement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnSupprimerVacationAtelier_Click(System.Object,System.EventArgs)">
+            <summary>
+            Suppression du dernier couple de DateTimePicker pour une Vacation ajouté dynamiquement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnAutreTheme_Click(System.Object,System.EventArgs)">
+            <summary>
+            Ajout dynamique d'une nouvelle TextBox pour un Thème
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnEnregistrerTheme_Click(System.Object,System.EventArgs)">
+            <summary>
+            Validation de l'ajout d'un Thème à un Atelier
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnSupprimerTheme_Click(System.Object,System.EventArgs)">
+            <summary>
+            Suppression de la dernière TextBox pour un Thème ajoutée dynamiquement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnAutreVacation_Click(System.Object,System.EventArgs)">
+            <summary>
+            Ajout dynamique d'un couple de DateTimepicker pour une Vacation
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnSupprimerVacation_Click(System.Object,System.EventArgs)">
+            <summary>
+            Suppression du dernier couple de DateTimePicker pour une Vacation ajouté dynamiquement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnEnregistrerVacation_Click(System.Object,System.EventArgs)">
+            <summary>
+            Validation de l'ajout d'une Vacation à un Atelier
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.CmbQualiteLicencie_SelectedValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.BtnEnregistrerLicencie_Click(System.Object,System.EventArgs)">
+            <summary>
+            Appel de la méthode permettant d'inscrire un licencié dans la base
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtLicenceLicencie_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtNumeroCheque_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.TxtMontantCheque_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Appelle la vérification du bouton d'enregistrement
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.RdbNuiteLicencie_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Méthode qui permet d'afficher ou masquer le controle panel permettant la saisie des nuités d'un licencié.
+            S'il faut rendre visible le panel, on teste si les nuités possibles ont été chargés dans ce panel. Si non, on les charges
+            On charge ici autant de contrôles ResaNuit qu'il y a de nuits possibles
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">e</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.btnEnregistrerArrivee_Click(System.Object,System.EventArgs)">
+            <summary>
+            Enregistrement de l'heure et l'arrivée d'un Participant
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:MaisonDesLigues.FrmPrincipale.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MaisonDesLigues.FrmPrincipale.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:MaisonDesLigues.Program">
+            <summary>
+            Main
+            </summary>
+        </member>
+        <member name="M:MaisonDesLigues.Program.Main">
+            <summary>
+            Point d'entrée principal de l'application.
+            </summary>
+        </member>
+        <member name="T:MaisonDesLigues.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:MaisonDesLigues.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:MaisonDesLigues.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:MaisonDesLigues.Properties.Resources.affiche">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:MaisonDesLigues.Properties.Resources.logo">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:MaisonDesLigues.Properties.Resources.Mdl">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class BaseDeDonnees.Bdd</title>
+	<link rel="stylesheet" href="resources/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/docs.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+  <a class="navbar-brand" href="#">MaisonDesLigues</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Namespaces</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="classes.html">Classes</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/JulienRAVIA/SharpDoc">SharpDoc <i class="fa fa-github"></i></a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="mb-2"></div>	<div class="container">
+			<nav aria-label="breadcrumb" role="navigation">
+		<ol class="breadcrumb">
+  		  <li class="breadcrumb-item">
+  		  	<span class="badge badge-success">Class</span>
+  		  	<a href="namespace.BaseDeDonnees.html">BaseDeDonnees</a>
+  		  </li>
+  		  <li class="breadcrumb-item">
+  		  	Bdd
+  		  </li>
+  		</ol>
+	</nav>
+
+	<div class="card mb-2">
+		<div class="card-body" style="padding: 10px;">
+			Classe d&#039;accès aux données
+		</div>
+	</div>
+
+	<h3>Bdd</h3>
+	<div class="card">
+		<div class="card-header" style="padding: 5px;">Methods</div>
+		<div class="card-body" style="padding: 0;">
+	    	<table class="table table-striped table-responsive-sm" style="margin: 0;">
+			  	<tbody>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">#ctor</a><br>
+			    	  	Initializes a new instance of the  class.
+            Constructeur de la connexion <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>unLogin</td>
+							  	  		  	<td>login utilisateur</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>unPwd</td>
+							  	  		  	<td>mot de passe utilisateur</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">FermerConnexion</a><br>
+			    	  	Méthode permettant de fermer la connexion <br>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">ObtenirDonnesOracle</a><br>
+			    	  	permet de récupérer le contenu d&#039;une table ou d&#039;une vue. <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>uneTableOuVue</td>
+							  	  		  	<td> nom de la table ou la vue dont on veut récupérer le contenu</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">InscrireLicencie</a><br>
+			    	  	Procédure publique qui va appeler la procédure stockée permettant d&#039;inscrire un nouveau licencié sans nuités <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pNom</td>
+							  	  		  	<td>Nom du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pPrenom</td>
+							  	  		  	<td>Prénom du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse1</td>
+							  	  		  	<td>Adresse du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse2</td>
+							  	  		  	<td>Complément d&#039;adresse du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pCp</td>
+							  	  		  	<td>Code Postal du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pVille</td>
+							  	  		  	<td>Ville du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pTel</td>
+							  	  		  	<td>Numéro de téléphone du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pMail</td>
+							  	  		  	<td>Email du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Nullable{System.Int64}</th>
+							  	  		  	<td>pNumeroLicence</td>
+							  	  		  	<td>Numéro de licence du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>pIdQualite</td>
+							  	  		  	<td>Qualité du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.Int16}</th>
+							  	  		  	<td>pAteliers</td>
+							  	  		  	<td>Ateliers du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int64</th>
+							  	  		  	<td>pNumCheque</td>
+							  	  		  	<td>Numéro de chèque du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Double</th>
+							  	  		  	<td>pMontantCheque</td>
+							  	  		  	<td>Montant du chèque du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pTypePaiement</td>
+							  	  		  	<td>Type de paiement</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.Int16}</th>
+							  	  		  	<td>pAccompagnants</td>
+							  	  		  	<td>Accompagnants du licencié</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">InscrireLicencie</a><br>
+			    	  	Procédure publique qui va appeler la procédure stockée permettant d&#039;inscrire un nouveau licencié avec nuités <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pNom</td>
+							  	  		  	<td>Nom du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pPrenom</td>
+							  	  		  	<td>Prénom du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse1</td>
+							  	  		  	<td>Adresse du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse2</td>
+							  	  		  	<td>Complément d&#039;adresse du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pCp</td>
+							  	  		  	<td>Code Postal du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pVille</td>
+							  	  		  	<td>Ville du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pTel</td>
+							  	  		  	<td>Numéro de téléphone du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pMail</td>
+							  	  		  	<td>Email du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Nullable{System.Int64}</th>
+							  	  		  	<td>pNumeroLicence</td>
+							  	  		  	<td>Numéro de licence du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>pIdQualite</td>
+							  	  		  	<td>Qualité du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.Int16}</th>
+							  	  		  	<td>pAteliers</td>
+							  	  		  	<td>Ateliers du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int64</th>
+							  	  		  	<td>pNumCheque</td>
+							  	  		  	<td>Numéro de chèque du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Double</th>
+							  	  		  	<td>pMontantCheque</td>
+							  	  		  	<td>Montant du chèque du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pTypePaiement</td>
+							  	  		  	<td>Type de paiement</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pCategories</td>
+							  	  		  	<td>collection des catégories de l&#039;hotel du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pHotels</td>
+							  	  		  	<td>collection des hotels du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.Int16}</th>
+							  	  		  	<td>pNuits</td>
+							  	  		  	<td>collection des nuits du licencié</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.Int16}</th>
+							  	  		  	<td>pAccompagnants</td>
+							  	  		  	<td>Accompagnants du licencié</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">InscrireBenevole</a><br>
+			    	  	procédure qui va se charger d&#039;invoquer la procédure stockée qui ira inscrire un participant de type bénévole <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pNom</td>
+							  	  		  	<td>nom du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pPrenom</td>
+							  	  		  	<td>prénom du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse1</td>
+							  	  		  	<td>adresse1 du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse2</td>
+							  	  		  	<td>adresse2 du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pCp</td>
+							  	  		  	<td>cp du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pVille</td>
+							  	  		  	<td>ville du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pTel</td>
+							  	  		  	<td>téléphone du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pMail</td>
+							  	  		  	<td>mail du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.DateTime</th>
+							  	  		  	<td>pDateNaissance</td>
+							  	  		  	<td>mail du bénévole</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Nullable{System.Int64}</th>
+							  	  		  	<td>pNumeroLicence</td>
+							  	  		  	<td>numéro de licence du bénévole ou null</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.Int16}</th>
+							  	  		  	<td>pDateBenevolat</td>
+							  	  		  	<td>collection des id des dates où le bénévole sera présent</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">InscrireIntervenant</a><br>
+			    	  	Procédure publique qui va appeler la procédure stockée permettant d&#039;inscrire un nouvel intervenant sans nuité <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pNom</td>
+							  	  		  	<td>nom du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pPrenom</td>
+							  	  		  	<td>prénom du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse1</td>
+							  	  		  	<td>adresse1 du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse2</td>
+							  	  		  	<td>adresse2 du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pCp</td>
+							  	  		  	<td>cp du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pVille</td>
+							  	  		  	<td>ville du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pTel</td>
+							  	  		  	<td>téléphone du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pMail</td>
+							  	  		  	<td>mail du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>pIdAtelier</td>
+							  	  		  	<td> Id de l&#039;atelier où interviendra l&#039;intervenant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pIdStatut</td>
+							  	  		  	<td>statut de l&#039;intervenant pour l&#039;atelier : animateur ou intervenant</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">InscrireIntervenant</a><br>
+			    	  	Procédure publique qui va appeler la procédure stockée permettant d&#039;inscrire un nouvel intervenant qui aura des nuités <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pNom</td>
+							  	  		  	<td>nom du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pPrenom</td>
+							  	  		  	<td>prénom du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse1</td>
+							  	  		  	<td>adresse1 du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse2</td>
+							  	  		  	<td>adresse2 du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pCp</td>
+							  	  		  	<td>cp du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pVille</td>
+							  	  		  	<td>ville du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pTel</td>
+							  	  		  	<td>téléphone du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pMail</td>
+							  	  		  	<td>mail du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>pIdAtelier</td>
+							  	  		  	<td> Id de l&#039;atelier où interviendra l&#039;intervenant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pIdStatut</td>
+							  	  		  	<td>statut de l&#039;intervenant pour l&#039;atelier : animateur ou intervenant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pLesCategories</td>
+							  	  		  	<td>tableau contenant la catégorie de chambre pour chaque nuité à réserver</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pLesHotels</td>
+							  	  		  	<td>tableau contenant l&#039;hôtel pour chaque nuité à réserver</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.Int16}</th>
+							  	  		  	<td>pLesNuits</td>
+							  	  		  	<td>tableau contenant l&#039;id de la date d&#039;arrivée pour chaque nuité à réserver</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">ObtenirDatesNuites</a><br>
+			    	  	fonction permettant de construire un dictionnaire dont l&#039;id est l&#039;id d&#039;une nuité et le contenu une date
+            sous la la forme : lundi 7 janvier 2013        /// <br>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">AjouterAtelier</a><br>
+			    	  	Procédure publique qui va appeler la procédure stockée permettant d&#039;ajouter un atelier ainsi que ses thèmes et vacations <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pLibelle</td>
+							  	  		  	<td>Libellé de l&#039;Atelier</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Decimal</th>
+							  	  		  	<td>pNbPlacesMaxi</td>
+							  	  		  	<td>Nombre de places maximum de l&#039;Atelier</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pLesThemes</td>
+							  	  		  	<td>Thèmes de l&#039;Atelier</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pLesVacationsDebut</td>
+							  	  		  	<td>Début des vacations de l&#039;Atelier</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pLesVacationsFin</td>
+							  	  		  	<td>Fin des vacations de l&#039;Atelier</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">AjouterTheme</a><br>
+			    	  	Procédure publique qui va appeler la procédure stockée permettant d&#039;ajouter une liste de Thèmes à un Atelier <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>pIdAtelier</td>
+							  	  		  	<td>ID de l&#039;Atelier</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pLesThemes</td>
+							  	  		  	<td>Liste de Thèmes</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">AjouterVacation</a><br>
+			    	  	Procédure publique qui va appeler la procédure stockée permettant d&#039;ajouter une liste de Vacations à un Atelier <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>pIdAtelier</td>
+							  	  		  	<td>ID de l&#039;Atelier</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pLesVacationsDebut</td>
+							  	  		  	<td>Liste des débuts de Vacations</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Collections.ObjectModel.Collection{System.String}</th>
+							  	  		  	<td>pLesVacationsFin</td>
+							  	  		  	<td>Liste des fins de Vacations</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">ObtenirDonnesParticipantsOracle</a><br>
+			    	  	Fonction qui va retourner sous la forme d&#039;une table, l&#039;id, le nom, et le prénom de chaque Participant dans la  vue <br>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">Enregistrementarrivee</a><br>
+			    	  	Procédure publique qui va récupérer les informations du form afin de les insérer dans la base <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int32</th>
+							  	  		  	<td>pid</td>
+							  	  		  	<td>Participant que l&#039;on souhaite enregistrer (id)</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.DateTime</th>
+							  	  		  	<td>pDateHeureArrivee</td>
+							  	  		  	<td>Va prendre la date et l&#039;heure du DateTimePicker au moment de l&#039;enregistrement</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pclewifi</td>
+							  	  		  	<td>Récupère la clé wifi générée automatiquement afin de l&#039;enregistrer dans la base</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">ParamsSpecifiquesIntervenant</a><br>
+			    	  	méthode privée permettant de valoriser les paramètres d&#039;un objet commmand spécifiques intervenants <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">Oracle.ManagedDataAccess.Client.OracleCommand</th>
+							  	  		  	<td>cmd</td>
+							  	  		  	<td> nom de l&#039;objet command concerné par les paramètres</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>pIdAtelier</td>
+							  	  		  	<td> Id de l&#039;atelier où interviendra l&#039;intervenant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pIdStatut</td>
+							  	  		  	<td>statut de l&#039;intervenant pour l&#039;atelier : animateur ou intervenant</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">GetMessageOracle</a><br>
+			    	  	méthode permettant de renvoyer un message d&#039;erreur provenant de la bd
+            après l&#039;avoir formatté. On ne renvoie que le message, sans code erreur <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>unMessage</td>
+							  	  		  	<td>message à formater</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">ParamCommunsNouveauxParticipants</a><br>
+			    	  	méthode privée permettant de valoriser les paramètres d&#039;un objet commmand communs aux licenciés, bénévoles et intervenants <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">Oracle.ManagedDataAccess.Client.OracleCommand</th>
+							  	  		  	<td>cmd</td>
+							  	  		  	<td>nom de l&#039;objet command concerné par les paramètres</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pNom</td>
+							  	  		  	<td>nom du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pPrenom</td>
+							  	  		  	<td>prénom du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse1</td>
+							  	  		  	<td>adresse1 du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pAdresse2</td>
+							  	  		  	<td>adresse2 du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pCp</td>
+							  	  		  	<td>cp du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pVille</td>
+							  	  		  	<td>ville du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pTel</td>
+							  	  		  	<td>téléphone du participant</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pMail</td>
+							  	  		  	<td>mail du participant</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			  	</tbody>
+			</table>
+		</div>
+	</div>
+
+		<div class="mb-2"></div>
+	</div>
+	<footer class="footer">
+      <div class="container">
+        <span class="text-muted float-right">Generated with <a href="https://github.com/JulienRAVIA/SharpDoc"><i class="fa fa-scissors"></i> SharpDoc</a> by <a href="https://github.com/JulienRAVIA"><i class="fa fa-user"></i> Julien RAVIA</a></span>
+      </div>
+    </footer>
+	<script src="resources/jquery.min.js"></script>
+	<script src="resources/popper.min.js"></script>
+	<script src="resources/bootstrap.min.js"></script>
+</body>
+</html>

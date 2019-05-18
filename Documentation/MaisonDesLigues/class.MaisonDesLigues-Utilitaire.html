@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class MaisonDesLigues.Utilitaire</title>
+	<link rel="stylesheet" href="resources/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/docs.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+  <a class="navbar-brand" href="#">MaisonDesLigues</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Namespaces</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="classes.html">Classes</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/JulienRAVIA/SharpDoc">SharpDoc <i class="fa fa-github"></i></a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="mb-2"></div>	<div class="container">
+			<nav aria-label="breadcrumb" role="navigation">
+		<ol class="breadcrumb">
+  		  <li class="breadcrumb-item">
+  		  	<span class="badge badge-success">Class</span>
+  		  	<a href="namespace.MaisonDesLigues.html">MaisonDesLigues</a>
+  		  </li>
+  		  <li class="breadcrumb-item">
+  		  	Utilitaire
+  		  </li>
+  		</ol>
+	</nav>
+
+	<div class="card mb-2">
+		<div class="card-body" style="padding: 10px;">
+			Classe utilitaire
+		</div>
+	</div>
+
+	<h3>Utilitaire</h3>
+	<div class="card">
+		<div class="card-header" style="padding: 5px;">Methods</div>
+		<div class="card-body" style="padding: 0;">
+	    	<table class="table table-striped table-responsive-sm" style="margin: 0;">
+			  	<tbody>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">CreerCombo</a><br>
+			    	  	Créé une combobox dans un container avec le nom passé en paramètre <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.ScrollableControl</th>
+							  	  		  	<td>unContainer</td>
+							  	  		  	<td>panel ou groupbox</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>unNom</td>
+							  	  		  	<td>nom de la groupbox à créer</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>unTop</td>
+							  	  		  	<td>positionnement haut dans le container  </td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>unLeft</td>
+							  	  		  	<td>positionnement bas dans le container </td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">RemplirComboBoxParticipants</a><br>
+			    	  	Procédure qui va ajouter dans un dictionnaire les données que l&#039;ont récupère d&#039;un participant
+            (id,nom,prenom) et qui servira a hydrater la combobox <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">BaseDeDonnees.Bdd</th>
+							  	  		  	<td>uneConnexion</td>
+							  	  		  	<td>unobjet de type connexion</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.ComboBox</th>
+							  	  		  	<td>uneCombo</td>
+							  	  		  	<td>unobjet de type </td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">CreerDesControles</a><br>
+			    	  	Cette méthode crée des controles de type chckbox ou radio button dans un controle de type panel.
+            Elle va chercher les données dans la base de données et crée autant de controles (les uns au dessous des autres
+            qu&#039;il y a de lignes renvoyées par la base de données. <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.Form</th>
+							  	  		  	<td>uneForme</td>
+							  	  		  	<td>Le formulaire concerné</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">BaseDeDonnees.Bdd</th>
+							  	  		  	<td>uneConnexion</td>
+							  	  		  	<td>L&#039;objet connexion à utiliser pour la connexion à la BD</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pUneTable</td>
+							  	  		  	<td>Le nom de la source de données qui va fournir les données. Il s&#039;agit en fait d&#039;une vue de type
+            VXXXXOn ou XXXX représente le nom de la tabl à partir de laquelle la vue est créée. n représente un numéro de séquence</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>pPrefixe</td>
+							  	  		  	<td>les noms des controles sont standard : NomControle_XX
+                                                    ou XX estl&#039;id de l&#039;enregistrement récupéré dans la vue qui
+                                                    sert de source de données</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.ScrollableControl</th>
+							  	  		  	<td>unPanel</td>
+							  	  		  	<td>panel ou groupbox dans lequel on va créer les controles</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>unTypeControle</td>
+							  	  		  	<td>type de controle à créer : checkbox ou radiobutton</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Action{System.Object</th>
+							  	  		  	<td>callback</td>
+							  	  		  	<td> Le pointeur de fonction. En fait le pointeur sur la fonction qui réagira à l&#039;événement déclencheur </td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">RemplirComboBox</a><br>
+			    	  	méthode permettant de remplir une combobox à partir d&#039;une source de données <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">BaseDeDonnees.Bdd</th>
+							  	  		  	<td>uneConnexion</td>
+							  	  		  	<td>L&#039;objet connexion à utiliser pour la connexion à la BD</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.ComboBox</th>
+							  	  		  	<td>uneCombo</td>
+							  	  		  	<td> La combobox que l&#039;on doit remplir</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>uneSource</td>
+							  	  		  	<td>Le nom de la source de données qui va fournir les données. Il s&#039;agit en fait d&#039;une vue de type
+            VXXXXOn ou XXXX représente le nom de la tabl à partir de laquelle la vue est créée. n représente un numéro de séquence</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">CreerTextBox</a><br>
+			    	  	Méthode permettant de créer une TextBox dans un panel passé en paramètre <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.ScrollableControl</th>
+							  	  		  	<td>unPanel</td>
+							  	  		  	<td>Panel</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>unNom</td>
+							  	  		  	<td>Nom de la TextBox</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>unTop</td>
+							  	  		  	<td>Position Top de la TextBox</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>unLeft</td>
+							  	  		  	<td>Position Left de la TextBox</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">CreerControlesVacation</a><br>
+			    	  	Méthode permettant de créer les contrôles d&#039;une vacation dans un panel passé en paramètre <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.ScrollableControl</th>
+							  	  		  	<td>unPanel</td>
+							  	  		  	<td>Panel</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>unNomDtpDebut</td>
+							  	  		  	<td>Nom du premier contôle</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>unTopDtpDebut</td>
+							  	  		  	<td>Position Top du premier contrôle</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>unLeftDtpDebut</td>
+							  	  		  	<td>Position Left du premier contrôle</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>unNomDtpFin</td>
+							  	  		  	<td>Nom du second contôle</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>unTopDtpFin</td>
+							  	  		  	<td>Position Top du second contrôle</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>unLeftDtpFin</td>
+							  	  		  	<td>Position Left du second contrôle</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">EnvoiMail</a><br>
+			    	  	Permet l&#039;envoi d&#039;un mail via le protocole smtp <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>email</td>
+							  	  		  	<td>Destinataire</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>objetMail</td>
+							  	  		  	<td>Objet</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>messageMail</td>
+							  	  		  	<td>Message</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">CompteChecked</a><br>
+			    	  	Cette fonction va compter le nombre de controles types CheckBox qui sont cochées contenus dans la collection controls
+            du container passé en paramètre <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.ScrollableControl</th>
+							  	  		  	<td>unContainer</td>
+							  	  		  	<td> le container sur lequel on va compter les controles de type checkbox qui sont checked</td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			        <tr id="">
+			    	  <th scope="row"><span class="badge badge-primary">Method</span></th>
+			    	  <td>
+			    	  	<a href="#">AffecterControle</a><br>
+			    	  	Cette méthode permet de renseigner les propriétés des contrôles à créer. C&#039;est une partie commune aux
+            3 types de participants : intervenant, licencié, bénévole <br>
+			    	  				    	  		<table class="table table-sm table-responsive-sm mt-2">
+			    	  			<thead>
+			    	  				<tr>
+			    	  					<th colspan="3">Parameters</th>
+			    	  				</tr>
+			    	  			</thead>
+							  	<tbody>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.Form</th>
+							  	  		  	<td>uneForme</td>
+							  	  		  	<td>le formulaire concerné</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.ScrollableControl</th>
+							  	  		  	<td>unContainer</td>
+							  	  		  	<td>le panel ou le groupbox dans lequel on va placer les controles</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Windows.Forms.ButtonBase</th>
+							  	  		  	<td>unControleAPlacer</td>
+							  	  		  	<td> le controle en cours de création</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.String</th>
+							  	  		  	<td>unPrefixe</td>
+							  	  		  	<td>les noms des controles sont standard : NomControle_XX
+                                                    ou XX estl&#039;id de l&#039;enregistrement récupéré dans la vue qui
+                                                    sert de siurce de données</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Data.DataRow</th>
+							  	  		  	<td>uneLigne</td>
+							  	  		  	<td>un enregistrement de la vue, celle pour laquelle on crée le contrôle</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Int16</th>
+							  	  		  	<td>i</td>
+							  	  		  	<td> Un compteur qui sert à positionner en hauteur le controle</td>
+							  	  		</tr>
+			    	  														<tr>
+							  	  	  		<th scope="row">System.Action{System.Object</th>
+							  	  		  	<td>callback</td>
+							  	  		  	<td> Le pointeur de fonction. En fait le pointeur sur la fonction qui réagira à l&#039;événement déclencheur </td>
+							  	  		</tr>
+			    	  											  	</tbody>
+							</table>
+			    	  				    	  </td>
+			    	  <td>
+			    	  				    	  </td>
+			    	</tr>
+			    			  	</tbody>
+			</table>
+		</div>
+	</div>
+
+		<div class="mb-2"></div>
+	</div>
+	<footer class="footer">
+      <div class="container">
+        <span class="text-muted float-right">Generated with <a href="https://github.com/JulienRAVIA/SharpDoc"><i class="fa fa-scissors"></i> SharpDoc</a> by <a href="https://github.com/JulienRAVIA"><i class="fa fa-user"></i> Julien RAVIA</a></span>
+      </div>
+    </footer>
+	<script src="resources/jquery.min.js"></script>
+	<script src="resources/popper.min.js"></script>
+	<script src="resources/bootstrap.min.js"></script>
+</body>
+</html>
